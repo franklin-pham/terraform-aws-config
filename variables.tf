@@ -1,7 +1,4 @@
-variable "region" {
-  type        = string
-  description = "AWS Region"
-}
+
 
 variable "s3_bucket_id" {
   description = "The id (name) of the S3 bucket used to store the configuration history"
