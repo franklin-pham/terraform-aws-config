@@ -133,5 +133,5 @@ variable "s3_key_prefix" {
 variable "disabled_aggregation_regions" {
   type        = list(string)
   description = "A list of regions where config aggregation is disabled"
-  default     = ["ap-northeast-3"]
+  default     = ["ap-northeast-3","us-east-1","us-east-2"]
 }
