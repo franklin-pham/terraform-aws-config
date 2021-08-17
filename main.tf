@@ -198,11 +198,8 @@ resource "aws_config_aggregate_authorization" "central" {
   count = local.enabled && var.central_resource_collector_account == null ? 1 : 0
 
   account_id = data.aws_caller_identity.this.account_id
-#-----------------------------------------------------------------------------------------------------------------------
-#   region     = var.global_resource_collector_region
 
-#-----------------------------------------------------------------------------------------------------------------------
-  region     = us-west-2
+  region     = var.global_resource_collector_region
 }
 
 
