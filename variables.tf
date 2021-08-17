@@ -1,4 +1,7 @@
-
+variable "region" {
+  description = "AWS region"
+  default     = "us-west-2"
+}
 
 variable "s3_bucket_id" {
   description = "The id (name) of the S3 bucket used to store the configuration history"
