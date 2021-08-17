@@ -1,6 +1,5 @@
-variable "aws" {
-  region= var.aws_region
-  type=string
+variable "aws_region" {
+  type        =string
 }
 
 variable "s3_bucket_id" {
