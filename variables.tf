@@ -76,8 +76,7 @@ variable "iam_role_arn" {
 
 variable "global_resource_collector_region" {
   description = "The region that collects AWS Config data for global resources such as IAM"
-  type        = list(string)
-  default     = ["us-west-1","us-west-2"]
+  type        = string
 }
 
 variable "central_resource_collector_account" {
